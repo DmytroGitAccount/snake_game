@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Snake Game</title>
+		<script src="./main.js" type="module"></script>
+	</head>
+	<body>
+		<main>
+			<!-- Main Game Window -->
+			<div class="game">
+				<div class="score_table">
+					<img src="./img/apple.png" />
+					<h3 id="current_score">0</h3>
+					<img src="./img/star.png" />
+					<h3 id="high_score">0</h3>
+				</div>
+				<div id="game_grid" class="grid"></div>
+
+				<!-- Game Over Window -->
+				<div id="game_over" class="game_menus" hidden>
+					<div class="game_over">
+						<h1>Game Over!</h1>
+						<h2>Score: <span id="score">10</span></h2>
+						<div>
+							<a href="#" class="btn green">Paly Again</a>
+							<a href="#" class="btn red">Exit</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Game Paused Window -->
+				<div id="game_paused" class="game_menus" hidden>
+					<div class="game_paused">
+						<h1>Game Paused</h1>
+						<h2>Press Space to continue</h2>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

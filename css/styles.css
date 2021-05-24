@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: var(--main-text-color);
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: #1d1d1d;
+	justify-content: center;
+}
+:root {
+	--wall-color: #006100;
+	--fruit-color: #da1900;
+	--snake-color: #193953;
+	--grass-color: #03aa03;
+	--main-text-color: #e6e6e6;
+	--score-area-color: #004400;
+}
+
+/* Main Game Container */
+.game {
+	position: relative;
+	display: inline-block;
+}
+.score_table {
+	display: flex;
+	padding: 15px 0;
+	align-items: center;
+	background: var(--score-area-color);
+}
+.score_table img {
+	width: 30px;
+	margin-left: 20px;
+}
+
+/* Game Grid */
+.grid {
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--grass-color);
+}
+
+.grass {
+	background: var(--grass-color);
+}
+.wall {
+	background: var(--wall-color);
+}
+
+.snake {
+	border-radius: 5px;
+	background: var(--snake-color);
+}
+
+.fruit {
+	border-radius: 50%;
+	background: var(--fruit-color);
+}
+
+.game_over {
+	gap: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.game_menus {
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backdrop-filter: brightness(20%);
+}
+
+.game_over h1 {
+	color: red;
+	font-size: 48px;
+}
+
+.btn {
+	width: 100px;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: inline-block;
+	box-shadow: 1px 3px 10px 0 black;
+}
+
+.btn:hover {
+	opacity: 50%;
+}
+.green {
+	background: green;
+}
+.red {
+	background: red;
+}
+
+.game_paused {
+	gap: 100px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.game_paused h2 {
+	color: #4f4f4f;
+}
